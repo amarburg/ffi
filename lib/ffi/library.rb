@@ -67,6 +67,7 @@ module FFI
               break if lib
 
             rescue Exception => ex
+              p ex
               ldscript = false
               if ex.message =~ /(([^ \t()])+\.so([^ \t:()])*):([ \t])*invalid ELF header/
                 if File.read($1) =~ /GROUP *\( *([^ \)]+) *\)/
