@@ -73,11 +73,7 @@ module FFI
                   libname = $1
                   ldscript = true
                 end
-              elsif ex.message =~ /.*undefined symbol.*/
-                break
               end
-
-              p ex
 
               if ldscript
                 retry
