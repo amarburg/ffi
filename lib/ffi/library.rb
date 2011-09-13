@@ -77,6 +77,8 @@ module FFI
                 break
               end
 
+              p ex
+
               if ldscript
                 retry
               else
